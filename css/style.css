@@ -295,7 +295,7 @@ nav ul li a.active {
 .choose-us-para {
   height: 38px;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -367,4 +367,9 @@ nav ul li a.active {
 .sect4 {
   height: 500px;
   background-image: linear-gradient(rgb(78, 78, 78), rgb(61, 61, 61));
+}
+
+.sect5 {
+  height: 70px;
+  background-image: linear-gradient(rgb(194, 191, 191), rgb(158, 158, 158));
 }

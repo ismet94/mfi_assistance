@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather+Sans:300" rel="stylesheet"> 
+    
     <script src="main.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    integrity="sha256- 2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
         <header>
@@ -28,7 +30,7 @@ crossorigin="anonymous"></script>
                 </ul>
             </nav>
       
-        </header>
+        </header> 
 
 
     <section class="blank">
@@ -37,7 +39,7 @@ crossorigin="anonymous"></script>
 
     <section class="sect1">
         <div  class="container1">
-            <div class="container1-head">
+            <div class="container1-head" >
                 <h1>
                     Welcome to MFI Assistance
                 </h1>
@@ -60,14 +62,14 @@ crossorigin="anonymous"></script>
             <h1 class="offer">
                 What We Offer
             </h1>
-            <div class="offer-para" data-aos="flip-right">
+            <div class="offer-para" >
             <p>
                 Nova LifeStyle, Inc., designer, manufacturer and distributor of modern LifeStyle furniture, announced the successful development of a new line of furniture that has the ability to monitor, record and deliver user data to key medical care providers.
                 <br>
                 Called Smart Health Furniture, the new line will be able to automatically examine a person’s blood pressure, heart rate, breathing, weight, body temperature, sleep quality and other physiological indexes. The data obtained by the Smart Health Furniture will be made available to medical professionals to aid in the early detection of possible health issues. Nova is currently in talks with several distributors in the US, China and Europe.
             </p>
             <a href="#">
-            <button class="offer-btn" data-aos="flip-right">
+            <button class="offer-btn" >
                 SEE MORE
             </button></a>
         </div>
@@ -141,10 +143,17 @@ crossorigin="anonymous"></script>
 
     </section>
 
+    
+    <section class="sect5">
+
+
+    </section>
+
 
 
      <!-- the the jquery for the nav bar -->
-     <script>$(window).scroll(function() {
+     <script>
+     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll > 10){
             $("header").addClass('scrolled');
@@ -155,6 +164,7 @@ crossorigin="anonymous"></script>
         
     } )
     </script>
+
 
 </body>
 </html>
