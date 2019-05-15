@@ -1,0 +1,608 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; 
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 62.5rem;
+  padding-top: 100px;
+  background-color: rgb(253, 250, 244);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.781);
+  transition: 1s; 
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header.scrolled {
+  height: 100px;
+  z-index: 100; 
+}
+
+header .mfilogo {
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(40% - 150px);
+  transition: 1s; 
+}
+  
+header.scrolled .mfilogo {
+  position: relative;
+  top: 0;
+  left: 0; 
+}
+
+header img.background {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 1.2s; 
+}
+
+header .mfilogo img {
+  width: 33rem;
+  height: 11rem;
+  padding: 0.6rem;
+  transition: 1.2s; 
+}
+
+header.scrolled img.background {
+  opacity: 0; 
+}
+
+header.scrolled .mfilogo img {
+  width: 14.25rem; 
+  height: 5rem;
+  padding: 0.5rem;
+}
+
+nav {
+  position: relative;
+  float: right;
+}
+
+ul {
+  font-family: 'Libre Baskerville', serif;
+  margin-right: 5rem;
+}
+
+nav ul {
+  position: relative;
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100px);
+  transition: 1.2s;
+}
+
+header.scrolled nav ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(253, 250, 244);
+    border-radius: 10%;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-size: 20px;
+    background-color: rgb(253, 250, 244);
+    border-radius: 10%;
+    padding: 1.2rem;
+    color: rgb(54, 54, 54);
+    transition: ease-in 250ms;
+    
+}
+nav ul li a.active {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 10%;
+    color: #000000;
+}
+
+.blank {
+  height: 13rem;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  z-index: 99;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+.sect1 {
+  height: 500px;
+  background-image: linear-gradient(rgb(253, 250, 244), rgb(190, 190, 190));
+}
+
+.container1 {
+  display: grid;
+  width: 75%;
+  margin: auto;
+  
+
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+  
+  grid-template-areas: 
+          "head head head head"
+          ". para para ."
+}
+
+.container1-head {
+  grid-area: head;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(36, 36, 36);
+}
+
+.container1-para {
+  grid-area: para;
+  height: 38px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: rgb(2, 2, 2);
+}
+
+
+
+.sect2 {
+  height: 500px;
+  background-color: rgb(211, 210, 210);
+  background-image: linear-gradient( to right, #383838b9, #66666652), url(../images/driving.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -100px;
+}
+
+
+.container2 {
+  display: grid;
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 2%;
+  float: left;
+  justify-items: center;
+
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 60%);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
+
+  grid-template-areas: 
+          "offer"
+          "offerpara"
+          "offerbtn"
+}
+
+
+.offer { 
+  grid-area: offer;
+  margin-top: 5%;
+  height: 38px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 48px;
+  margin-left: 20%;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}
+
+
+.offer-para {
+  grid-area: offerpara;
+  height: 38px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  margin-left: 20%;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}
+
+.offer-btn {
+  grid-area: offerbtn;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(65, 65, 65);
+  color: rgb(248, 235, 220);
+  text-align: center;
+}
+
+.offer-btn:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+.sect3 {
+  height: 800px;
+  background-image: linear-gradient(rgb(253, 250, 244), rgb(190, 190, 190));
+}
+
+
+.container3 {
+  display: grid;
+  width: 80%;
+  margin: auto;
+
+  /* grid columns and rows size */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-gap: 50px;
+
+  grid-template-areas: 
+          "choose choose choose"
+          "time team rates"
+          "quick driver prof"
+}
+
+.choose { 
+  grid-area: choose;
+  height: 38px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 48px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(36, 36, 36);
+}
+
+.choose-us-sub-head {
+  grid-area: choose;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: rgb(0, 52, 148);
+}
+
+.choose-us-para {
+  height: 38px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: rgb(36, 36, 36);
+}
+
+.time {
+  grid-area: time;
+  text-align: center;
+}
+
+.time:hover {
+  filter: brightness(150%);
+  cursor: default;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+.timing-icon {
+  background-repeat: no-repeat;
+}
+
+
+.team {
+  grid-area: team;
+  text-align: center;
+}
+
+.team:hover {
+  filter: brightness(150%);
+  cursor: default;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+.team-icon {
+  background-repeat: no-repeat;
+}
+
+
+.rates {
+  grid-area: rates;
+  text-align: center;
+}
+
+.rates:hover {
+  filter: brightness(150%);
+  cursor: default;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+.rates-icon {
+  background-repeat: no-repeat;
+}
+
+
+
+.quick {
+  grid-area: quick;
+  text-align: center;
+}
+
+.quick:hover {
+  filter: brightness(150%);
+  cursor: default;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+
+.quick-icon {
+  background-repeat: no-repeat;
+}
+
+.driver {
+  grid-area: driver;
+  text-align: center;
+}
+
+.driver-icon {
+  background-repeat: no-repeat;
+}
+
+.driver:hover {
+  filter: brightness(150%);
+  cursor: default;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+.prof {
+  grid-area: prof;
+  text-align: center;
+}
+
+.prof:hover {
+  filter: brightness(150%);
+  cursor: default;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+
+.prof-icon {
+  background-repeat: no-repeat;
+}
+
+
+.sect4 {
+  height: 500px;
+  background-image: linear-gradient( rgb(253, 250, 244), rgb(190, 190, 190));
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.container4 {
+  display: grid;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+ 
+
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 50%);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
+
+  grid-template-areas: 
+          "image regis"
+}
+
+.regis-image {
+  grid-area: image;
+  background-image: url(../images/stay-connected.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.regi {
+  grid-area: regis;
+  font-size: 50px;
+  float: right;
+}
+
+
+
+/* --------------------- FOOTER --------------------- */
+
+.sect5 {
+  height: 400px;
+  background-image: linear-gradient(rgb(78, 78, 78), rgb(61, 61, 61));
+}
+
+.grid-footer {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  color: aliceblue;
+  font-family: 'Merriweather Sans', sans-serif;
+
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-gap: 30px;
+
+  grid-template-areas: 
+          "contct social learn ."
+}
+
+.contactinfo {
+  grid-area: contct
+}
+
+.social a {
+  grid-area: social;
+  color: rgb(255, 255, 240);
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: rgb(255, 241, 195);
+  font-size: 17px;
+  transform: scale(1.2);
+}
+
+.learn a {
+  grid-area: learn;
+  color: aliceblue;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.learn a:hover {
+  color: rgb(255, 241, 195);
+  font-size: 17px;
+  transform: scale(1.2);
+}
+
+input {
+  border-radius: 5px;
+  text-indent: 2%;
+  font-size: 12px;
+  background-color: rgb(255, 255, 233);
+  font-family: 'Merriweather Sans', sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+textarea {
+  border-radius: 5px;
+  text-indent: 1%;
+  font-size: 12px;
+  background-color: rgb(255, 255, 233);
+  font-family: 'Merriweather Sans', sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+.send-btn {
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: rgb(65, 65, 65);
+  color: rgb(248, 235, 220);
+  text-align: center;
+}
+
+
+
+.sect6 {
+  height: 70px;
+  background-image: linear-gradient(rgb(194, 191, 191), rgb(158, 158, 158));
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  padding-top: 2%;
+}
+
+

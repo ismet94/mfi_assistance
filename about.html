@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="icons/logo2inv.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather+Sans:300" rel="stylesheet"> 
+    <script src="main.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256- 2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+        <header>
+            <nav>
+                    <img src="/images/logo-mfi.png" alt="" class="nav2-logo">
+                <ul>
+                  
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="#">Sign-in</a></li>
+                </ul>
+            </nav>
+        </header> 
+
+        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+        <footer class="sect5">
+                <div class="grid-footer">
+                    <div class="contactinfo">
+                        <img src="/images/logo-white.png" alt="" width="100px">
+                        <br>
+                        <p>mfiassistance@mail.com</p>
+                        <p>Tell: 021 654 6513</p>
+                        <p>Cell: 081 513 6543</p>
+                        <p>23 Bexel Street, GoodWood</p>
+                    </div>
+        
+                    <div class="social">
+                        <h3>Connect with Us:</h3>
+                        <p><i class="fab fa-facebook-square"></i> <a href="http://"> Facebook</a> </p>
+                        <p> <i class="fab fa-instagram"></i><a href="http://"> Instagram</a> </p>
+                        <p><i class="fab fa-twitter"></i><a href="http://"> Twitter</a> </p>
+                        <p><i class="fab fa-whatsapp"></i><a href="http://"> WhatsApp</a> </p>
+                        <p><i class="far fa-envelope"></i><a href="http://"> Email</a> </p>
+                    </div>
+        
+                    <div class="learn">
+                        <h3>Learn More:</h3>
+                        <p><a href="http://"> About</a> </p>
+                        <p><a href="http://"> Services</a> </p>
+                        <p><a href="http://"> Contact Us</a> </p>
+                        <p><a href="http://"> Support</a> </p>
+                        <p><a href="http://"> Terms & Conditions</a> </p>
+                    </div>
+        
+                    <div class="mail">
+                        <h3>Mail Us Today:</h3>
+                        <input type="text" placeholder="Your Name">
+                        <br>
+                        <input type="text" placeholder="Your Surname">
+                        <br>
+                        <textarea name="" id="" cols="28" rows="7" placeholder="Your Comment"></textarea>
+                        <br>
+                        <button class="send-btn">Send</button>
+                    </div>
+                </div>
+            </footer>
+        
+            
+            <section class="sect6">
+                <div class="copyright">
+                    Copyright &copy; 2019 Designed by <a href="https://github.com/ismet94">Ismet Samsodien</a> All rights reserved.
+                </div>
+            </section>
+
+            <script>
+                    // ===== Scroll to Top ==== 
+                    $(window).scroll(function() {
+                    if ($(this).scrollTop() >= 50) {      
+                        $('#return-to-top').fadeIn(200);    
+                    } else {
+                        $('#return-to-top').fadeOut(200);   
+                    }
+                    });
+                    $('#return-to-top').click(function() {      
+                    $('body,html').animate({
+                        scrollTop : 0                       
+                    }, 500);
+                    });
+                    </script>
+        
+</body>
+</html>
