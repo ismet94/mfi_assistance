@@ -34,53 +34,98 @@
             </nav>
         </header> 
 
-       
+        <section class="blank2">
+            </section>
+
+
+<section class="form-sect">
+        
+    <div class="form-container" data-aos="slide-up">
+        
+        <form action="" class="form1">
+                <h1 class="reg-head">
+                    Register Form
+                </h1>
+                <div class="line1"></div>
+            <div >
+                <input class="name" type="text" placeholder="Your Name">
+            </div>  
+            <div>
+                <input class="surname" type="text" name="" id="" placeholder="Your Surname">
+            </div>
+            <div>
+                <input class="email" type="text" placeholder="Your Email">
+            </div>
+            <div class="radio">
+                <input  type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <div>
+                <select name="Subscription" placeholder="Subscription">
+                    <option value="blank">Subscription</option>
+                    <option value="1month">1 Month</option>
+                    <option value="3month">3 month</option>
+                    <option value="6month">6 month</option>
+                    <option value="1year">1 year</option>
+                </select> 
+            </div>
+            <div>
+                <input class="password" type="password" placeholder="Select a Password">
+            </div>
+            <div>
+                <input class="password" type="password" placeholder="Confirm Your Password">
+            </div>
+           <div >
+                <input class="submit" type="submit" value="Submit">
+           </div>
+        </form>
+    </div>
+</section>
+
 </div>
 
+<footer class="sect5">
+    <div class="grid-footer">
+        <div class="contactinfo" data-aos="zoom-out-right">
+            <img src="/images/logo-white.png" alt="" width="100px" >
+            <br>
+            <p>mfiassistance@mail.com</p>
+            <p>Tell: 021 654 6513</p>
+            <p>Cell: 081 513 6543</p>
+            <p>23 Bexel Street, GoodWood</p>
+        </div>
 
+        <div class="social" data-aos="zoom-out-up">
+            <h3>Connect with Us:</h3>
+            <p><a href="http://"> <i class="fab fa-facebook-square"></i> Facebook</a> </p>
+            <p><a href="http://"> <i class="fab fa-instagram"></i> Instagram</a> </p>
+            <p><a href="http://"> <i class="fab fa-twitter"></i> Twitter</a> </p>
+            <p><a href="http://"> <i class="fab fa-whatsapp"></i> WhatsApp</a> </p>
+            <p><a href="http://"> <i class="far fa-envelope"></i> Email</a> </p>
+        </div>
 
+        <div class="learn" data-aos="zoom-out-up">
+            <h3>Learn More:</h3>
+            <p><a href="http://"> About</a> </p>
+            <p><a href="http://"> Services</a> </p>
+            <p><a href="http://"> Contact Us</a> </p>
+            <p><a href="http://"> Support</a> </p>
+            <p><a href="http://"> Terms & Conditions</a> </p>
+        </div>
 
-        <footer class="sect5">
-                <div class="grid-footer">
-                    <div class="contactinfo" >
-                        <img src="/images/logo-white.png" alt="" width="100px">
-                        <br>
-                        <p>mfiassistance@mail.com</p>
-                        <p>Tell: 021 654 6513</p>
-                        <p>Cell: 081 513 6543</p>
-                        <p>23 Bexel Street, GoodWood</p>
-                    </div>
-        
-                    <div class="social">
-                        <h3>Connect with Us:</h3>
-                        <p><i class="fab fa-facebook-square"></i> <a href="http://"> Facebook</a> </p>
-                        <p> <i class="fab fa-instagram"></i><a href="http://"> Instagram</a> </p>
-                        <p><i class="fab fa-twitter"></i><a href="http://"> Twitter</a> </p>
-                        <p><i class="fab fa-whatsapp"></i><a href="http://"> WhatsApp</a> </p>
-                        <p><i class="far fa-envelope"></i><a href="http://"> Email</a> </p>
-                    </div>
-        
-                    <div class="learn">
-                        <h3>Learn More:</h3>
-                        <p><a href="http://"> About</a> </p>
-                        <p><a href="http://"> Services</a> </p>
-                        <p><a href="http://"> Contact Us</a> </p>
-                        <p><a href="http://"> Support</a> </p>
-                        <p><a href="http://"> Terms & Conditions</a> </p>
-                    </div>
-        
-                    <div class="mail">
-                        <h3>Mail Us Today:</h3>
-                        <input type="text" placeholder="Your Name">
-                        <br>
-                        <input type="text" placeholder="Your Surname">
-                        <br>
-                        <textarea name="" id="" cols="28" rows="7" placeholder="Your Comment"></textarea>
-                        <br>
-                        <button class="send-btn">Send</button>
-                    </div>
-                </div>
-            </footer>
+        <div class="mail" data-aos="zoom-out-left">
+            <h3>Mail Us Today:</h3>
+            <input class="yourname" type="text" placeholder="Your Name">
+            <br>
+            <input class="yoursurname" type="text" placeholder="Your Surname">
+            <br>
+            <textarea name="" id="" cols="28" rows="7" placeholder="Your Comment"></textarea>
+            <br>
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+</footer>
         
             
             <section class="sect6">
@@ -104,6 +149,13 @@
                     }, 500);
                     });
     </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+          duration:900,
+      });
+</script>
         
 </body>
 </html>

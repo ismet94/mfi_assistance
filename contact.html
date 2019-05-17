@@ -38,8 +38,22 @@
         <section class="contact-us-section">
             <div class="contact-grid">
                 <h1 class="contact-us-head">
-                    Contact Us
+                    Contact Us Today
+                    <div class="line2"></div>
                 </h1>
+                <p class="tel">
+                   <strong>Tel: </strong> 021 324 2334
+                </p>
+                <p class="cel">
+                   <strong>Cel: </strong> 063 565 4568
+                </p>
+                <p class="mails">
+                   <strong> Email: </strong>mfiassistance@mails.co.za
+                </p>
+                <p class="location">
+                    <strong>Address: </strong> 23 Bexel Street, Goodwood
+                </p>
+                <iframe data-aos="slide-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13245.511381804254!2d18.539245275512428!3d-33.9056736888153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5bbd39c84ae3%3A0x55dda774cc544481!2sGoodwood+Estate%2C+Cape+Town%2C+7460!5e0!3m2!1sen!2sza!4v1557927592844!5m2!1sen!2sza"  frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
        
@@ -75,14 +89,14 @@
                 </div>
     
                 <div class="mail" data-aos="zoom-out-left">
-                    <h3>Mail Us Today:</h3>
-                    <input type="text" placeholder="Your Name">
-                    <br>
-                    <input type="text" placeholder="Your Surname">
-                    <br>
-                    <textarea name="" id="" cols="28" rows="7" placeholder="Your Comment"></textarea>
-                    <br>
-                    <button class="send-btn">Send</button>
+                        <h3>Mail Us Today:</h3>
+                        <input class="yourname" type="text" placeholder="Your Name">
+                        <br>
+                        <input class="yoursurname" type="text" placeholder="Your Surname">
+                        <br>
+                        <textarea name="" id="" cols="28" rows="7" placeholder="Your Comment"></textarea>
+                        <br>
+                        <button class="send-btn">Send</button>
                 </div>
             </div>
         </footer>
@@ -95,11 +109,8 @@
             </section>
 
 
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-            <script>
+
+        <script>
                     // ===== Scroll to Top ==== 
                     $(window).scroll(function() {
                     if ($(this).scrollTop() >= 20) {      
@@ -113,7 +124,13 @@
                         scrollTop : 0                       
                     }, 500);
                     });
-                    </script>
+            </script>
         
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+            duration:800,
+        });
+  </script>
 </body>
 </html>

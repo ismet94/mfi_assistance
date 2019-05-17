@@ -114,125 +114,191 @@ nav ul li a.active {
     top: 5px;
   }
 
+/* -------------------------------------------------------------- */
+/* ------------------------ABOUT PAGE---------------------------- */
+/* -------------------------------------------------------------- */
 
+.about-background {
+  background-image: linear-gradient( #383838b9, #66666652) , url(../images/about-back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
+.blank3 {
+  height: 8rem;
+}
 
+.about-container {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.87), rrgba(245, 245, 245, 0.884)  rgba(248, 248, 248, 0.767));
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
 
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 60%);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
 
-.sect5 {
-    height: 400px;
-    background-image: linear-gradient(rgb(78, 78, 78), rgb(61, 61, 61));
-  }
-  
-  .grid-footer {
-    display: grid;
-    width: 80%;
-    margin: auto;
-    padding-top: 5%;
-    color: aliceblue;
-    font-family: 'Merriweather Sans', sans-serif;
-  
-    /* grid columns and rows size */
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto);
-    grid-gap: 30px;
-  
-    grid-template-areas: 
-            "contct social learn ."
-  }
-  
-  .contactinfo {
-    grid-area: contct
-  }
-  
-  .social a {
-    grid-area: social;
-    color: aliceblue;
-    line-height: 1.6;
-    text-decoration: none;
-  }
-  
-  .social a:hover {
-    color: rgb(255, 241, 195);
-    font-size: 17px;
-    transform: scale(1.2);
-  }
-  
-  .learn a {
-    grid-area: learn;
-    color: aliceblue;
-    line-height: 1.6;
-    text-decoration: none;
-  }
-  
-  .learn a:hover {
-    color: rgb(255, 241, 195);
-    font-size: 17px;
-    transform: scale(1.2);
-  }
-  
-  input {
-    border-radius: 5px;
-    text-indent: 2%;
-    font-size: 12px;
-    background-color: rgb(255, 255, 233);
-    font-family: 'Merriweather Sans', sans-serif;
-    color: rgb(51, 51, 51);
-  }
-  
-  textarea {
-    border-radius: 5px;
-    text-indent: 1%;
-    font-size: 12px;
-    background-color: rgb(255, 255, 233);
-    font-family: 'Merriweather Sans', sans-serif;
-    color: rgb(51, 51, 51);
-  }
-  
-  .send-btn {
-    width: 100px;
-    height: 25px;
-    border-radius: 20px;
-    background-color: rgb(65, 65, 65);
-    color: rgb(248, 235, 220);
-    text-align: center;
-  }
-  
-  
-  
-  .sect6 {
-    height: 70px;
-    background-image: linear-gradient(rgb(194, 191, 191), rgb(158, 158, 158));
-  }
-  
-  .copyright {
-    text-align: center;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 12px;
-    padding-top: 2%;
-  }
+  grid-template-areas: 
+          "form1"
+}
 
-
-
-
+/* -------------------------------------------------------------- */
+/* -----------------------REGISTER PAGE-------------------------- */
+/* -------------------------------------------------------------- */
 
 .register-background {
     background-image: linear-gradient( #383838b9, #66666652) , url(../images/register-back.jpg);
-    background-size: cover;
-    height: 100vh;
-}
-
-
-.contact-background {
-  background-image: linear-gradient( #383838b9, #66666600) , url(../images/contact-back.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
+.blank2 {
+  height: 8rem;
+}
+
+.form-sect {
+  height: 700px;
+}
+
+.form-container {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.048),  rgba(0, 0, 255, 0));
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+
+  /* grid columns and rows size */
+  grid-template-columns: repeat(1, 60%);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
+
+  grid-template-areas: 
+          "form1"
+}
+
+.reg-head {
+  font-size: 50px;
+  color: rgba(252, 245, 237, 0.753);
+  margin: 15px 15px 0px 15px;
+}
+
+.line1 {
+  border-top: solid 3px rgba(128, 128, 128, 0.753);
+  width: 330px;
+  margin-bottom: 15px;
+}
+
+.form1 {
+  grid-area: form1;
+}
+
+.name {
+  background-color: #cecece38;
+  color: rgba(252, 245, 237, 0.753);
+  font-size: 14px;
+  width: 250px;
+  height: 30px;
+  text-indent: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.surname {
+  background-color: #cecece38;
+  color: rgba(252, 245, 237, 0.753);
+  font-size: 14px;
+  width: 250px;
+  height: 30px;
+  text-indent: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.email {
+  background-color: #cecece38;
+  color: rgba(252, 245, 237, 0.753);
+  font-size: 14px;
+  width: 250px;
+  height: 30px;
+  text-indent: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.radio {
+  color: rgba(252, 245, 237, 0.753);
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+
+select {
+  background-color: #4e4e4e38;
+  color: rgba(252, 245, 237, 0.753);
+  font-size: 14px;
+  width: 250px;
+  height: 30px;
+  text-indent: 5px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+option {
+  background-color: #4e4e4e38;
+  color: rgba(252, 245, 237, 0.753);
+}
+
+
+.password {
+  background-color: #cecece38;
+  color: rgba(252, 245, 237, 0.753);
+  font-size: 14px;
+  width: 250px;
+  height: 30px;
+  text-indent: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.submit { 
+  margin-top: 15px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(65, 65, 65);
+  color: rgb(248, 235, 220);
+  text-align: center;
+}
+
+.submit:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+/* -------------------------------------------------------------- */
+/* -----------------------CONTACT PAGE--------------------------- */
+/* -------------------------------------------------------------- */
+
+.contact-background {
+  background-image: linear-gradient( to right, #383838b9, #66666600) , url(../images/contact-back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .blank {
-  height: 7.2rem;
+  height: 7rem;
 }
 
 .contact-us-section {
@@ -242,10 +308,11 @@ nav ul li a.active {
 
 .contact-grid {
   display: grid;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  float: left;
-
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.048),  rgba(0, 0, 255, 0));
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
 
   /* grid columns and rows size */
   grid-template-columns: repeat(1, 50%);
@@ -254,13 +321,249 @@ nav ul li a.active {
 
   grid-template-areas: 
           "contactheading"
-          "offerpara"
+          "tel"
           "offerbtn"
 }
 
 .contact-us-head {
   grid-area: contactheading;
-  font-size: 25px;
+  font-size: 55px;
+  margin-bottom: 0px;
+  margin-top: 5px;
 }
 
+.line2 {
+  border-top: solid 3px rgba(150, 149, 149, 0.753);
+  width: 420px;
+  margin-bottom: 7px;
+}
+
+.tel {
+  grid-area: tel;
+  font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    /* This makes sure that no text is displayed yet */
+    overflow: hidden;
+    /* This keeps all the lettering in one line */
+    white-space: nowrap; 
+    margin-bottom: 0px;
+    margin-top: 5px;
+    letter-spacing: .1em; 
+    border-right: .15em solid orange; 
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* This creates the typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 40% }
+  }
+  
+  /* The blniker effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(255, 166, 0, 0); }
+  }
+  
+.cel {
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  /* This makes sure that no text is displayed yet */
+  overflow: hidden;
+  /* This keeps all the lettering in one line */
+  white-space: nowrap; 
+  margin-bottom: 0px;
+  margin-top: 5px;
+  letter-spacing: .1em; 
+  /* styling for the blinker */
+  border-right: .15em solid orange; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* This creates the typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
+
+/* The blniker effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255, 166, 0, 0); }
+}
+
+.mails {
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  /* This makes sure that no text is displayed yet */
+  overflow: hidden;
+  /* This keeps all the lettering in one line */
+  white-space: nowrap; 
+  margin-bottom: 0px;
+  margin-top: 5px;
+  letter-spacing: .1em; 
+  /* styling for the blinker */
+  border-right: .15em solid orange; 
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* This creates the typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 70% }
+}
+
+/* The blniker effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255, 166, 0, 0); }
+}
+
+.location {
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  /* This makes sure that no text is displayed yet */
+  overflow: hidden;
+  /* This keeps all the lettering in one line */
+  white-space: nowrap; 
+  margin-bottom: 2px;
+  margin-top: 5px;
+  letter-spacing: .1em; 
+  /* styling for the blinker */
+  border-right: .15em solid orange; 
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* This creates the typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 70% }
+}
+
+/* The blniker effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255, 166, 0, 0); }
+}
+iframe {
+  height: 350px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+
+/* -------------------------------------------------- */
+/* --------------------- FOOTER --------------------- */
+/* -------------------------------------------------- */
+
+
+.sect5 {
+  height: 400px;
+  background-image: linear-gradient(rgb(78, 78, 78), rgb(61, 61, 61));
+}
+
+.grid-footer {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  color: aliceblue;
+  font-family: 'Merriweather Sans', sans-serif;
+
+  /* grid columns and rows size */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-gap: 30px;
+
+  grid-template-areas: 
+          "contct social learn ."
+}
+
+.contactinfo {
+  grid-area: contct
+}
+
+.social a {
+  grid-area: social;
+  color: aliceblue;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: rgb(255, 241, 195);
+  font-size: 17px;
+  transform: scale(1.2);
+}
+
+.learn a {
+  grid-area: learn;
+  color: aliceblue;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.learn a:hover {
+  color: rgb(255, 241, 195);
+  font-size: 17px;
+  transform: scale(1.2);
+}
+
+.yourname {
+  border-radius: 5px;
+  text-indent: 2%;
+  font-size: 12px;
+  background-color: rgb(255, 255, 233);
+  font-family: 'Merriweather Sans', sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+.yoursurname {
+  border-radius: 5px;
+  text-indent: 2%;
+  font-size: 12px;
+  background-color: rgb(255, 255, 233);
+  font-family: 'Merriweather Sans', sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+textarea {
+  border-radius: 5px;
+  text-indent: 1%;
+  font-size: 12px;
+  background-color: rgb(255, 255, 233);
+  font-family: 'Merriweather Sans', sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+.send-btn {
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: rgb(65, 65, 65);
+  color: rgb(248, 235, 220);
+  text-align: center;
+}
+
+
+
+.sect6 {
+  height: 70px;
+  background-image: linear-gradient(rgb(194, 191, 191), rgb(158, 158, 158));
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  padding-top: 2%;
+}
 

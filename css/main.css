@@ -184,6 +184,12 @@ nav ul li a.active {
   top: 5px;
 }
 
+
+/* -------------------------------------------------- */
+/* -------------------- WELCOME --------------------- */
+/* -------------------------------------------------- */
+
+
 .sect1 {
   height: 500px;
   background-image: linear-gradient(rgb(253, 250, 244), rgb(190, 190, 190));
@@ -228,6 +234,10 @@ nav ul li a.active {
 }
 
 
+/* -------------------------------------------------- */
+/* -------------------- WE OFFER -------------------- */
+/* -------------------------------------------------- */
+
 
 .sect2 {
   height: 500px;
@@ -258,7 +268,6 @@ nav ul li a.active {
           "offerbtn"
 }
 
-
 .offer { 
   grid-area: offer;
   margin-top: 5%;
@@ -274,7 +283,6 @@ nav ul li a.active {
   text-align: center;
   color: white;
 }
-
 
 .offer-para {
   grid-area: offerpara;
@@ -308,11 +316,16 @@ nav ul li a.active {
   transform: scale(1.1);
 }
 
+
+/* -------------------------------------------------- */
+/* ----------------- WHY CHOOSE US ------------------ */
+/* -------------------------------------------------- */
+
+
 .sect3 {
   height: 800px;
   background-image: linear-gradient(rgb(253, 250, 244), rgb(190, 190, 190));
 }
-
 
 .container3 {
   display: grid;
@@ -383,7 +396,6 @@ nav ul li a.active {
   background-repeat: no-repeat;
 }
 
-
 .team {
   grid-area: team;
   text-align: center;
@@ -399,7 +411,6 @@ nav ul li a.active {
 .team-icon {
   background-repeat: no-repeat;
 }
-
 
 .rates {
   grid-area: rates;
@@ -417,8 +428,6 @@ nav ul li a.active {
   background-repeat: no-repeat;
 }
 
-
-
 .quick {
   grid-area: quick;
   text-align: center;
@@ -430,7 +439,6 @@ nav ul li a.active {
   transition: ease-in-out 250ms;
   transform: scale(1.1);
 }
-
 
 .quick-icon {
   background-repeat: no-repeat;
@@ -470,6 +478,11 @@ nav ul li a.active {
 }
 
 
+/* -------------------------------------------------- */
+/* ---------------- REGISTER SECTION ---------------- */
+/* -------------------------------------------------- */
+
+
 .sect4 {
   height: 500px;
   background-image: linear-gradient( rgb(253, 250, 244), rgb(190, 190, 190));
@@ -488,7 +501,7 @@ nav ul li a.active {
 
   /* grid columns and rows size */
   grid-template-columns: repeat(1, 50%);
-  grid-template-rows: repeat(auto);
+  grid-template-rows: repeat(1, 400px);
   grid-gap: 10px;
 
   grid-template-areas: 
@@ -497,20 +510,56 @@ nav ul li a.active {
 
 .regis-image {
   grid-area: image;
-  background-image: url(../images/stay-connected.jpg);
-  background-size: contain;
+  background-image: linear-gradient( to top, rgba(253, 250, 244, 0.281), rgba(190, 190, 190, 0.205)), url(../images/stay-connected.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .regi {
   grid-area: regis;
+  color: rgb(36, 36, 36);
+}
+
+.regi-heading {
   font-size: 50px;
-  float: right;
+  text-indent: 15px;
+  margin-bottom: 0px;
 }
 
 
 
+.exclusive {
+  text-indent: 15px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.points {
+  line-height: 1.5;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.register-btn {
+  margin-left: 20px;
+  width: 160px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(65, 65, 65);
+  color: rgb(248, 235, 220);
+  text-align: center;
+}
+
+.register-btn:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transition: ease-in-out 250ms;
+  transform: scale(1.1);
+}
+
+
+/* -------------------------------------------------- */
 /* --------------------- FOOTER --------------------- */
+/* -------------------------------------------------- */
 
 .sect5 {
   height: 400px;

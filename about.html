@@ -18,7 +18,8 @@ crossorigin="anonymous"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-
+        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+        <div class="about-background">
         <header>
             <nav>
                     <img src="/images/logo-mfi.png" alt="" class="nav2-logo">
@@ -33,49 +34,65 @@ crossorigin="anonymous"></script>
             </nav>
         </header> 
 
-        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+        <section class="blank">
+            </section>
+
+            <section class="about-us-section">
+                    <div class="about-container">
+                        <h1 class="about-heading">
+                            About Us
+                            <div class="line3"></div>
+                        </h1>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus provident molestias natus ipsam accusamus, esse voluptates officia. Aperiam corporis vero ea laudantium, minima unde quisquam odio pariatur optio alias adipisci!
+                        </p>
+                    </div>
+                </section>        
+
+      </div>
 
         <footer class="sect5">
-                <div class="grid-footer">
-                    <div class="contactinfo">
-                        <img src="/images/logo-white.png" alt="" width="100px">
-                        <br>
-                        <p>mfiassistance@mail.com</p>
-                        <p>Tell: 021 654 6513</p>
-                        <p>Cell: 081 513 6543</p>
-                        <p>23 Bexel Street, GoodWood</p>
-                    </div>
-        
-                    <div class="social">
-                        <h3>Connect with Us:</h3>
-                        <p><i class="fab fa-facebook-square"></i> <a href="http://"> Facebook</a> </p>
-                        <p> <i class="fab fa-instagram"></i><a href="http://"> Instagram</a> </p>
-                        <p><i class="fab fa-twitter"></i><a href="http://"> Twitter</a> </p>
-                        <p><i class="fab fa-whatsapp"></i><a href="http://"> WhatsApp</a> </p>
-                        <p><i class="far fa-envelope"></i><a href="http://"> Email</a> </p>
-                    </div>
-        
-                    <div class="learn">
-                        <h3>Learn More:</h3>
-                        <p><a href="http://"> About</a> </p>
-                        <p><a href="http://"> Services</a> </p>
-                        <p><a href="http://"> Contact Us</a> </p>
-                        <p><a href="http://"> Support</a> </p>
-                        <p><a href="http://"> Terms & Conditions</a> </p>
-                    </div>
-        
-                    <div class="mail">
+            <div class="grid-footer">
+                <div class="contactinfo" data-aos="zoom-out-right">
+                    <img src="/images/logo-white.png" alt="" width="100px" >
+                    <br>
+                    <p>mfiassistance@mail.com</p>
+                    <p>Tell: 021 654 6513</p>
+                    <p>Cell: 081 513 6543</p>
+                    <p>23 Bexel Street, GoodWood</p>
+                </div>
+    
+                <div class="social" data-aos="zoom-out-up">
+                    <h3>Connect with Us:</h3>
+                    <p><a href="http://"> <i class="fab fa-facebook-square"></i> Facebook</a> </p>
+                    <p><a href="http://"> <i class="fab fa-instagram"></i> Instagram</a> </p>
+                    <p><a href="http://"> <i class="fab fa-twitter"></i> Twitter</a> </p>
+                    <p><a href="http://"> <i class="fab fa-whatsapp"></i> WhatsApp</a> </p>
+                    <p><a href="http://"> <i class="far fa-envelope"></i> Email</a> </p>
+                </div>
+    
+                <div class="learn" data-aos="zoom-out-up">
+                    <h3>Learn More:</h3>
+                    <p><a href="http://"> About</a> </p>
+                    <p><a href="http://"> Services</a> </p>
+                    <p><a href="http://"> Contact Us</a> </p>
+                    <p><a href="http://"> Support</a> </p>
+                    <p><a href="http://"> Terms & Conditions</a> </p>
+                </div>
+    
+                <div class="mail" data-aos="zoom-out-left">
                         <h3>Mail Us Today:</h3>
-                        <input type="text" placeholder="Your Name">
+                        <input class="yourname" type="text" placeholder="Your Name">
                         <br>
-                        <input type="text" placeholder="Your Surname">
+                        <input class="yoursurname" type="text" placeholder="Your Surname">
                         <br>
                         <textarea name="" id="" cols="28" rows="7" placeholder="Your Comment"></textarea>
                         <br>
                         <button class="send-btn">Send</button>
-                    </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
+    
         
             
             <section class="sect6">
@@ -99,6 +116,11 @@ crossorigin="anonymous"></script>
                     }, 500);
                     });
                     </script>
-        
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                  AOS.init({
+                          duration:800,
+                      });
+                </script>
 </body>
 </html>
